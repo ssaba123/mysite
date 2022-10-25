@@ -1,0 +1,53 @@
+body{
+    background-color: blueviolet;
+    color:orange;
+    font-family:consolas;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+ul{
+    border:4px solid orange;
+    padding:10px;
+}
+
+ul li{
+    margin-left:20px;
+   padding:10px;
+    list-style-type: circle;
+    transition: all 0.5s ease;
+}
+
+ul li:nth-of-type(odd){
+    background-color: orange;
+    color:purple;
+}
+
+ul li:hover{
+    font-style:italic;
+    background-color: purple;
+    color:orange;
+}
+
+
+ol{
+    width:400px;
+    background-color: red;;
+}
+
+ol li{
+    padding:10px;
+    border-bottom:4px solid white;
+    transition: all ease 0.5s;
+}
+
+ol li:hover{
+    transform: scale(1.1) translateX(100px); 
+}
+
+ol:hover li:not(:hover){
+    filter:blur(2px)
+}
+
